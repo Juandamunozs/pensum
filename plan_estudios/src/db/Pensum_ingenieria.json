@@ -1,0 +1,103 @@
+[
+  {
+    "semestre": "Semestre I",
+    "materias": [
+      { "nombre": "INTRODUCCIÓN A LA INGENIERÍA", "estado": "Aprobada" },
+      { "nombre": "MATEMÁTICAS FUNDAMENTALES", "estado": "Aprobada" },
+      { "nombre": "MATEMÁTICAS DISCRETAS", "estado": "Aprobada" },
+      { "nombre": "TÉCNICAS PARA EL APRENDIZAJE EN LA MODALIDAD VIRTUAL", "estado": "Aprobada" },
+      { "nombre": "ALGORITMOS Y PROGRAMACIÓN I", "estado": "Aprobada" },
+      { "nombre": "PROGRAMACIÓN DE COMPUTADORES I", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre II",
+    "materias": [
+      { "nombre": "ÁLGEBRA LINEAL", "estado": "Matriculada" },
+      { "nombre": "CÁLCULO I", "estado": "Aprobada" },
+      { "nombre": "FÍSICA Y LABORATORIO I", "estado": "Matriculada" },
+      { "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS", "estado": "Matriculada" },
+      { "nombre": "ALGORITMOS Y PROGRAMACIÓN II", "estado": "Aprobada" },
+      { "nombre": "PROGRAMACIÓN DE COMPUTADORES II", "estado": "Matriculada" }
+    ]
+  },
+  {
+    "semestre": "Semestre III",
+    "materias": [
+      { "nombre": "INGLÉS I", "estado": "Aprobada" },
+      { "nombre": "CÁLCULO II", "estado": "Aprobada" },
+      { "nombre": "FÍSICA Y LABORATORIO II", "estado": "Pendiente" },
+      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Pendiente" },
+      { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre IV",
+    "materias": [
+      { "nombre": "INGLÉS II", "estado": "Aprobada" },
+      { "nombre": "ECUACIONES DIFERENCIALES", "estado": "Pendiente" },
+      { "nombre": "PROYECTO INTEGRADOR BÁSICO", "estado": "Aprobada" },
+      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Pendiente" },
+      { "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS", "estado": "Pendiente" }
+    ]
+  },
+  {
+    "semestre": "Semestre V",
+    "materias": [
+      { "nombre": "INGLÉS III", "estado": "Aprobada" },
+      { "nombre": "TEORÍA DE GRAFOS", "estado": "Pendiente" },
+      { "nombre": "INVESTIGACIÓN DE OPERACIONES", "estado": "Pendiente" },
+      { "nombre": "BASES DE DATOS", "estado": "Aprobada" },
+      { "nombre": "MODELADO Y ANÁLISIS DE SOFTWARE", "estado": "Pendiente" }
+    ]
+  },
+  {
+    "semestre": "Semestre VI",
+    "materias": [
+      { "nombre": "INGLÉS IV", "estado": "Aprobada" },
+      { "nombre": "GESTIÓN DE LA CONFIGURACIÓN", "estado": "Pendiente" },
+      { "nombre": "ADMINISTRACIÓN DE BASES DE DATOS", "estado": "Matriculada" },
+      { "nombre": "ARQUITECTURA DE SOFTWARE", "estado": "Pendiente" },
+      { "nombre": "DESARROLLO DE SOFTWARE", "estado": "Matriculada" }
+    ]
+  },
+  {
+    "semestre": "Semestre VII",
+    "materias": [
+      { "nombre": "CONSTITUCIÓN POLÍTICA", "estado": "Aprobada" },
+      { "nombre": "RAZONAMIENTO CUANTITATIVO", "estado": "Aprobada" },
+      { "nombre": "SISTEMAS OPERATIVOS", "estado": "Aprobada" },
+      { "nombre": "METODOLOGÍAS DEL SOFTWARE", "estado": "Pendiente" },
+      { "nombre": "DESARROLLO DE APLICACIONES EN LA WEB", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre VIII",
+    "materias": [
+      { "nombre": "ELECTIVA I", "estado": "Pendiente" },
+      { "nombre": "PROYECTO INTEGRADOR PROFESIONAL", "estado": "Pendiente" },
+      { "nombre": "ARQUITECTURA DE COMPUTADORES", "estado": "Pendiente" },
+      { "nombre": "VERIFICACIÓN Y VALIDACIÓN DE SOFTWARE", "estado": "Pendiente" },
+      { "nombre": "PATRONES DE DISEÑO DE SOFTWARE", "estado": "Pendiente" }
+    ]
+  },
+  {
+    "semestre": "Semestre IX",
+    "materias": [
+      { "nombre": "ELECTIVA II", "estado": "Pendiente" },
+      { "nombre": "MÉTODOS FORMALES EN ESPECIFICACIÓN Y DISEÑO", "estado": "Pendiente" },
+      { "nombre": "PROTOCOLOS DE REDES", "estado": "Pendiente" },
+      { "nombre": "CALIDAD Y PRUEBAS DE SOFTWARE", "estado": "Pendiente" },
+      { "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre X",
+    "materias": [
+      { "nombre": "PROYECTO INTEGRADOR DE GRADO", "estado": "Pendiente" },
+      { "nombre": "BUENAS PRÁCTICAS PROFESIONALES EN INGENIERÍA", "estado": "Pendiente" },
+      { "nombre": "SEGURIDAD DE SOFTWARE", "estado": "Pendiente" },
+      { "nombre": "GESTIÓN DE PROYECTOS DE INGENIERÍA", "estado": "Pendiente" }
+    ]
+  }
+]

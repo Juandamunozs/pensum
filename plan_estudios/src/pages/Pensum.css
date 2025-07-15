@@ -1,0 +1,170 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  padding: 2rem;
+  border-radius: 16px;
+  color: #1347e3;
+  text-shadow: 0 0 3px rgba(12, 22, 216, 0.7);
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.semestre-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.semestre-card:hover {
+  transform: translateY(-2px);
+}
+
+.semestre-titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.materia {
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+/* Estados */
+.materia.Pendiente {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-left: 4px solid #38bdf8;
+}
+
+
+.materia.Aprobada {
+  background-color: #bbf7d0;
+  color: #065f46;
+  border-left: 4px solid #22c55e;
+}
+
+.materia.Reprobada {
+  background-color: #fde68a;
+  color: #92400e;
+  border-left: 4px solid #f59e0b;
+}
+
+.materia.Matriculada {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  border-left: 4px solid #3b82f6;
+}
+
+.pensum-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: -3%;
+}
+
+ul {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.estado-resumen {
+  background: linear-gradient(to right, #f0fdf4, #ecfdf5);
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+  border: 1px solid #d1fae5;
+  margin-top: 48px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInResumen 1s ease-out;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animación de entrada */
+@keyframes fadeInResumen {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.estado-resumen p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-descarga {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 24px auto;
+}
+
+.btn-descarga:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+}
+
+.btn-descarga:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "semestre": "Semestre I",
+    "materias": [
+      { "nombre": "CURSO I CAMPO CIENTIFICO NATURAL", "estado": "Aprobada" },
+      { "nombre": "CURSO I CAMPO TECNOLOGICO", "estado": "Aprobada" },
+      { "nombre": "ALGORITMIA Y PROGRAMACION I", "estado": "Aprobada" },
+      { "nombre": "INTRODUCCION A LA TECNOLOGIA", "estado": "Aprobada" },
+      { "nombre": "CURSO I CAMPO COMUNICACION Y LENGUAJE", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre II",
+    "materias": [
+      { "nombre": "CALCULO I", "estado": "Aprobada" },
+      { "nombre": "FISICA", "estado": "Aprobada" },
+      { "nombre": "INGLES I", "estado": "Aprobada" },
+      { "nombre": "CONSTITUCION POLITICA", "estado": "Aprobada" },
+      { "nombre": "ALGORITMIA Y PROGRAMACION II", "estado": "Aprobada" },
+      { "nombre": "ELECTIVA DE AREA I", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre III",
+    "materias": [
+      { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" },
+      { "nombre": "LABORATORIO DE BASES DE DATOS", "estado": "Aprobada" },
+      { "nombre": "CALCULO II", "estado": "Aprobada" },
+      { "nombre": "CURSO I CAMPO GESTION", "estado": "Aprobada" },
+      { "nombre": "INGLES II", "estado": "Aprobada" },
+      { "nombre": "CONSTRUCCION DE SOFTWARE I", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre IV",
+    "materias": [
+      { "nombre": "CURSO CAMPO SOCIO POLITICO, FILOSOFICO Y HUMANISTIC", "estado": "Aprobada" },
+      { "nombre": "CURSO I CAMPO INVESTIGATIVO", "estado": "Aprobada" },
+      { "nombre": "PROYECTO INTEGRADOR BASICO", "estado": "Aprobada" },
+      { "nombre": "ADMINISTRACION DE SISTEMAS OPERATIVOS", "estado": "Aprobada" },
+      { "nombre": "CONSTRUCCION DE SOFTWARE II", "estado": "Aprobada" },
+      { "nombre": "INGLES III", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre V",
+    "materias": [
+      { "nombre": "REDES Y COMUNICACIONES", "estado": "Aprobada" },
+      { "nombre": "MANTENIMIENTO Y ENSAMBLE DE HARDWARE", "estado": "Aprobada" },
+      { "nombre": "PROGRAMACION DE DISPOSITIVOS MOVILES", "estado": "Aprobada" },
+      { "nombre": "ELECTIVA DE PROFUNDIZACION I", "estado": "Aprobada" },
+      { "nombre": "PROGRAMACION ORIENTADA A LA WEB", "estado": "Aprobada" }
+    ]
+  },
+  {
+    "semestre": "Semestre VI",
+    "materias": [
+      { "nombre": "ELECTIVA DE AREA II", "estado": "Aprobada" },
+      { "nombre": "ELECTIVA DE PROFUNDIZACION II", "estado": "Aprobada" },
+      { "nombre": "ELECTIVA DE PROFUNDIZACION III", "estado": "Aprobada" },
+      { "nombre": "ELECTIVA DE PROFUNDIZACION IV", "estado": "Aprobada" },
+      { "nombre": "PRACTICA EMPRESARIAL", "estado": "Aprobada" }
+    ]
+  }
+]
