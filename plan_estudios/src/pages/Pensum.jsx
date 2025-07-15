@@ -1,5 +1,5 @@
-import pensum_ingenieria from '../db/Pensum_ingenieria.json';
-import pensum_tecnologia from '../db/Pensum_tecnologia.json';
+import pensum_ingenieria from '../db/Pensum_p231_ingenieria.json';
+import pensum_tecnologia from '../db/Pensum_t215_tecnologia.json';
 import './Pensum.css';
 
 const manejarDescargaPDF = () => {
