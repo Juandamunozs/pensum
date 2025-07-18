@@ -8,6 +8,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<Navigate to="/Plan_de_estudios" />} />
       <Route path="/Plan_de_estudios" element={<Pensum />} />
+      <Route path="*" element={<Navigate to="/Plan_de_estudios" replace />} />
     </Routes>
   );
 }
