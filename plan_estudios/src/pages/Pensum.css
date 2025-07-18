@@ -20,7 +20,7 @@ body {
 .mb-4 {
   padding: 2rem;
   border-radius: 16px;
-  color: #1347e3;
+  color: #000000;
   text-shadow: 0 0 3px rgba(12, 22, 216, 0.7);
   max-width: 800px;
   margin: 2rem auto;
@@ -49,6 +49,9 @@ body {
   margin-bottom: 15px;
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 8px;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(13, 24, 230, 0.7);
+  color: #000;
 }
 
 .materia {
@@ -107,13 +110,19 @@ ul {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
   border: 1px solid #d1fae5;
-  margin-top: 48px;
-  max-width: 640px;
+  margin-top: 0.5%;
+  max-width: 15%;
   margin-left: auto;
   margin-right: auto;
   animation: fadeInResumen 1s ease-out;
-  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.estado-resumen svg {
+  font-size: 1.75rem;
+  transform: translateY(20%);
+  animation: bounce 1.5s infinite ease-in-out;
+  color: inherit;
 }
 
 /* Animación de entrada */
@@ -166,4 +175,20 @@ ul {
 
 .btn-descarga:active {
   transform: scale(0.98);
+}
+
+@media screen and (max-width: 640px) {
+
+  /* Estilos para celulares */
+  .pensum-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: -3%;
+  }
+
 }

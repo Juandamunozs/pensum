@@ -1,6 +1,9 @@
 import pensum_ingenieria from '../db/Pensum_p231_ingenieria.json';
 import pensum_tecnologia from '../db/Pensum_t215_tecnologia.json';
 import './Pensum.css';
+import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart } from 'react-icons/md';
+
+// npm install react-icons
 
 const manejarDescargaPDF = () => {
   window.print();
@@ -46,23 +49,43 @@ export default function Pensum() {
           </div>
         ))}
       </div>
-      <div className="estado-resumen grid gap-2 text-sm font-semibold mb-6 text-center">
-        <p className="text-green-700">
-          ✅ Aprobadas: {totalAprobadasIngenieria} ({porcentajeIngenieria(totalAprobadasIngenieria)}%)
-        </p>
-        <p className="text-blue-700">
-          📘 Matriculadas: {totalMatriculadasIngenieria} ({porcentajeIngenieria(totalMatriculadasIngenieria)}%)
-        </p>
-        <p className="text-yellow-700">
-          🕓 Pendientes: {totalPendientesIngenieria} ({porcentajeIngenieria(totalPendientesIngenieria)}%)
-        </p>
-        <p className="text-red-700">
-          ❌ Reprobadas: {totalDesaprobadasIngenieria} ({porcentajeIngenieria(totalDesaprobadasIngenieria)}%)
-        </p>
-        <p className="text-gray-600">
-          📊 Total de materias: {totalMateriasIngenieria}
-        </p>
-      </div>
+
+      <section className="estado-resumen grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm font-semibold mb-10">
+        <div className="flex items-center gap-3 bg-green-100 text-green-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCheckCircle className="text-green-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Aprobadas: {totalAprobadasIngenieria} ({porcentajeIngenieria(totalAprobadasIngenieria)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdMenuBook className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Matriculadas: {totalMatriculadasIngenieria} ({porcentajeIngenieria(totalMatriculadasIngenieria)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-yellow-100 text-yellow-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdAccessTime className="text-yellow-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Pendientes: {totalPendientesIngenieria} ({porcentajeIngenieria(totalPendientesIngenieria)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-red-100 text-red-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCancel className="text-red-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Reprobadas: {totalDesaprobadasIngenieria} ({porcentajeIngenieria(totalDesaprobadasIngenieria)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdBarChart className="text-gray-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Total de materias: {totalMateriasIngenieria}
+          </span>
+        </div>
+      </section>
 
       <h3 className="text-2xl font-bold mb-4">Plan de Estudios Tecnología en Sistemas de Información</h3>
       <p className="mb-6"></p>
@@ -82,24 +105,43 @@ export default function Pensum() {
           </div>
         ))}
       </div>
+      <section className="estado-resumen grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm font-semibold mb-10">
+        <div className="flex items-center gap-3 bg-green-100 text-green-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCheckCircle className="text-green-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Aprobadas: {totalAprobadasTecnologia} ({porcentajeTecnologia(totalAprobadasTecnologia)}%)
+          </span>
+        </div>
 
-      <div className="estado-resumen grid gap-2 text-sm font-semibold mb-6 text-center">
-        <p className="text-green-700">
-          ✅ Aprobadas: {totalAprobadasTecnologia} ({porcentajeTecnologia(totalAprobadasTecnologia)}%)
-        </p>
-        <p className="text-blue-700">
-          📘 Matriculadas: {totalMatriculadasTecnologia} ({porcentajeTecnologia(totalMatriculadasTecnologia)}%)
-        </p>
-        <p className="text-yellow-700">
-          🕓 Pendientes: {totalPendientesTecnologia} ({porcentajeTecnologia(totalPendientesTecnologia)}%)
-        </p>
-        <p className="text-red-700">
-          ❌ Reprobadas: {totalDesaprobadasTecnologia} ({porcentajeTecnologia(totalDesaprobadasTecnologia)}%)
-        </p>
-        <p className="text-gray-600">
-          📊 Total de materias: {totalMateriasTecnologia}
-        </p>
-      </div>
+        <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdMenuBook className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Matriculadas: {totalMatriculadasTecnologia} ({porcentajeTecnologia(totalMatriculadasTecnologia)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-yellow-100 text-yellow-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdAccessTime className="text-yellow-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Pendientes: {totalPendientesTecnologia} ({porcentajeTecnologia(totalPendientesTecnologia)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-red-100 text-red-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCancel className="text-red-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Reprobadas: {totalDesaprobadasTecnologia} ({porcentajeTecnologia(totalDesaprobadasTecnologia)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdBarChart className="text-gray-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Total de materias: {totalMateriasTecnologia}
+          </span>
+        </div>
+      </section>
+
       <div className="btn-container">
         <button
           onClick={manejarDescargaPDF}
