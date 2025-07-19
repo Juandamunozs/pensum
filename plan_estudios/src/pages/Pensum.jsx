@@ -1,13 +1,52 @@
 import pensum_ingenieria from '../db/Pensum_p231_ingenieria.json';
 import pensum_tecnologia from '../db/Pensum_t215_tecnologia.json';
 import './Pensum.css';
-import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart } from 'react-icons/md';
+import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart, MdTimelapse } from 'react-icons/md';
+import { FaGraduationCap } from "react-icons/fa";
 
 // npm install react-icons
 
 const manejarDescargaPDF = () => {
   window.print();
 };
+
+function tiempoRestante(ms, fechaObjetivo) {
+  const objetivo = new Date(fechaObjetivo);
+
+  if (ms <= 0) {
+    const fechaStr = objetivo.toLocaleDateString("es-CO", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return `Terminado el ${fechaStr}`;
+  }
+
+  const segundosTotales = Math.floor(ms / 1000);
+  const minutosTotales = Math.floor(segundosTotales / 60);
+  const horasTotales = Math.floor(minutosTotales / 60);
+  const diasTotales = Math.floor(horasTotales / 24);
+
+  const años = Math.floor(diasTotales / 365);
+  const meses = Math.floor((diasTotales % 365) / 30.44);
+  const dias = Math.floor((diasTotales % 365) % 30.44);
+
+  const horas = horasTotales % 24;
+  const minutos = minutosTotales % 60;
+  const segundos = segundosTotales % 60;
+
+  return años > 0
+    ? `${años} año${años > 1 ? "s" : ""}, ${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+    : meses > 0
+      ? `${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+      : dias > 0
+        ? `${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+        : horas > 0
+          ? `${horas}h, ${minutos}m, ${segundos}s`
+          : minutos > 0
+            ? `${minutos}m, ${segundos}s`
+            : `${segundos}s`;
+}
 
 export default function Pensum() {
 
@@ -26,8 +65,15 @@ export default function Pensum() {
   const totalMatriculadasTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'matriculada').length;
   const totalPendientesTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'pendiente').length;
   const totalDesaprobadasTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
-
   const porcentajeTecnologia = (cantidad) => ((cantidad / totalMateriasTecnologia) * 100).toFixed(1);
+
+  const now = new Date();
+  const pensumTecnologia = new Date("2024-11-30");
+  const pensumIngenieria = new Date("2028-05-30");
+
+  const tiempoRestanteTecnologia = tiempoRestante(pensumTecnologia - now, pensumTecnologia);
+  const tiempoRestanteIngenieria = tiempoRestante(pensumIngenieria - now, pensumIngenieria);
+
 
   return (
     <div className="p-4">
@@ -85,6 +131,20 @@ export default function Pensum() {
             Total de materias: {totalMateriasIngenieria}
           </span>
         </div>
+
+        <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdTimelapse className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            {tiempoRestanteIngenieria}
+          </span>
+        </div>
+
+        {/* <div className="flex items-center gap-3 bg-purple-100 text-purple-800 px-4 py-3 rounded-lg shadow-sm">
+          <FaGraduationCap className="text-purple-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Tiempo hasta el grado: {tiempoRestanteIngenieria}
+          </span>
+        </div> */}
       </section>
 
       <h3 className="text-2xl font-bold mb-4">Plan de Estudios Tecnología en Sistemas de Información</h3>
@@ -138,6 +198,13 @@ export default function Pensum() {
           <MdBarChart className="text-gray-600 text-2xl leading-none" />
           <span className="leading-tight">
             Total de materias: {totalMateriasTecnologia}
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdTimelapse className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            {tiempoRestanteTecnologia}
           </span>
         </div>
       </section>

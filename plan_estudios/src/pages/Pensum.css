@@ -111,7 +111,7 @@ ul {
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
   border: 1px solid #d1fae5;
   margin-top: 0.5%;
-  max-width: 15%;
+  max-width: 22%;
   margin-left: auto;
   margin-right: auto;
   animation: fadeInResumen 1s ease-out;
@@ -119,7 +119,7 @@ ul {
 }
 
 .estado-resumen svg {
-  font-size: 1.75rem;
+  font-size: 1.75rem; 
   transform: translateY(20%);
   animation: bounce 1.5s infinite ease-in-out;
   color: inherit;
@@ -177,6 +177,10 @@ ul {
   transform: scale(0.98);
 }
 
+.leading-tight {
+  margin-left: 1%;
+}
+
 @media screen and (max-width: 640px) {
 
   /* Estilos para celulares */
@@ -189,6 +193,20 @@ ul {
     box-sizing: border-box;
     padding: 10px;
     margin-top: -3%;
+  }
+
+  .estado-resumen {
+    background: linear-gradient(to right, #f0fdf4, #ecfdf5);
+    padding: 24px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.15);
+    border: 1px solid #d1fae5;
+    margin-top: 0.5%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInResumen 1s ease-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
 }
