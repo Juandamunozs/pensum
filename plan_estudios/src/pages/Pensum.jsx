@@ -36,16 +36,16 @@ function tiempoRestante(ms, fechaObjetivo) {
   const segundos = segundosTotales % 60;
 
   return años > 0
-    ? `${años} año${años > 1 ? "s" : ""}, ${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+    ? `En ${años} año${años > 1 ? "s" : ""}, ${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
     : meses > 0
-      ? `${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+      ? ` En ${meses} mes${meses > 1 ? "es" : ""}, ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
       : dias > 0
-        ? `${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
+        ? `En ${dias} día${dias > 1 ? "s" : ""}, ${horas}h, ${minutos}m, ${segundos}s`
         : horas > 0
-          ? `${horas}h, ${minutos}m, ${segundos}s`
+          ? `En ${horas}h, ${minutos}m, ${segundos}s`
           : minutos > 0
-            ? `${minutos}m, ${segundos}s`
-            : `${segundos}s`;
+            ? `En ${minutos}m, ${segundos}s`
+            : `En ${segundos}s`;
 }
 
 export default function Pensum() {
