@@ -1,8 +1,8 @@
 import pensum_ingenieria from '../db/Pensum_p231_ingenieria.json';
 import pensum_tecnologia from '../db/Pensum_t215_tecnologia.json';
+import fmi from '../db/fmi.json';
 import './Pensum.css';
 import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart, MdTimelapse } from 'react-icons/md';
-import { FaGraduationCap } from "react-icons/fa";
 
 // npm install react-icons
 
@@ -66,6 +66,14 @@ export default function Pensum() {
   const totalPendientesTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'pendiente').length;
   const totalDesaprobadasTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
   const porcentajeTecnologia = (cantidad) => ((cantidad / totalMateriasTecnologia) * 100).toFixed(1);
+
+  const materiasfmi = fmi.flatMap(sem => sem.materias);
+  const totalMateriasfmi = materiasfmi.length;
+  const totalAprobadasfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'aprobada').length;
+  const totalMatriculadasfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'matriculada').length;
+  const totalPendientesfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'pendiente').length;
+  const totalDesaprobadasfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
+  const porcentajefmi = (cantidad) => ((cantidad / totalMateriasfmi) * 100).toFixed(1);
 
   const now = new Date();
   const pensumTecnologia = new Date("2024-11-30");
@@ -147,6 +155,8 @@ export default function Pensum() {
         </div> */}
       </section>
 
+      <div class="linea-horizontal"></div>
+
       <h3 className="text-2xl font-bold mb-4">Plan de Estudios Tecnología en Sistemas de Información</h3>
       <p className="mb-6"></p>
       <div className="pensum-grid">
@@ -207,6 +217,70 @@ export default function Pensum() {
             {tiempoRestanteTecnologia}
           </span>
         </div>
+      </section>
+
+      <div class="linea-horizontal"></div>
+
+      <h3 className="text-2xl font-bold mb-4">Formación Integral Mixta USC</h3>
+      <p className="mb-6"></p>
+      <div className="pensum-grid-fmi">
+        {fmi.map((semestre, index) => (
+          <div key={index} className="semestre-card">
+            <h4 className="semestre-titulo">{semestre.semestre}</h4>
+            <ul className="grid gap-2">
+              {semestre.materias.map((materia, i) => (
+                <li key={i} className={`materia ${materia.estado}`}>
+                  {materia.nombre}
+                  <br />
+                  <strong>{materia.estado}</strong>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <section className="estado-resumen grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm font-semibold mb-10">
+        <div className="flex items-center gap-3 bg-green-100 text-green-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCheckCircle className="text-green-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Aprobadas: {totalAprobadasfmi} ({porcentajefmi(totalAprobadasfmi)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdMenuBook className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Matriculadas: {totalMatriculadasfmi} ({porcentajefmi(totalMatriculadasfmi)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-yellow-100 text-yellow-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdAccessTime className="text-yellow-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Pendientes: {totalPendientesfmi} ({porcentajefmi(totalPendientesfmi)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-red-100 text-red-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdCancel className="text-red-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Reprobadas: {totalDesaprobadasfmi} ({porcentajefmi(totalDesaprobadasfmi)}%)
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdBarChart className="text-gray-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            Total de materias: {totalMateriasfmi}
+          </span>
+        </div>
+
+        {/* <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
+          <MdTimelapse className="text-blue-600 text-2xl leading-none" />
+          <span className="leading-tight">
+            {tiempoRestanteTecnologia}
+          </span>
+        </div> */}
       </section>
 
       <div className="btn-container">

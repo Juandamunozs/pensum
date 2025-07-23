@@ -1,0 +1,10 @@
+[
+  {
+    "semestre": "FMI",
+    "materias": [
+      { "nombre": "ARTE Y CULTURA", "estado": "Aprobada" },
+      { "nombre": "CÁTEDRA SANTIAGUINA", "estado": "Pendiente" },
+      { "nombre": "DEPORTE FORMATIVO", "estado": "Aprobada" }
+    ]
+  }
+]
