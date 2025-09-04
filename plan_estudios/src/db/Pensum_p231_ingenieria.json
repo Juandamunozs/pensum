@@ -13,7 +13,7 @@
   {
     "semestre": "Semestre II",
     "materias": [
-      { "nombre": "ÁLGEBRA LINEAL", "estado": "Matriculada" },
+      { "nombre": "ÁLGEBRA LINEAL", "estado": "Aprobada" },
       { "nombre": "CÁLCULO I", "estado": "Aprobada" },
       { "nombre": "FÍSICA Y LABORATORIO I", "estado": "Matriculada" },
       { "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS", "estado": "Matriculada" },
@@ -58,7 +58,7 @@
       { "nombre": "GESTIÓN DE LA CONFIGURACIÓN", "estado": "Pendiente" },
       { "nombre": "ADMINISTRACIÓN DE BASES DE DATOS", "estado": "Matriculada" },
       { "nombre": "ARQUITECTURA DE SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "DESARROLLO DE SOFTWARE", "estado": "Matriculada" }
+      { "nombre": "DESARROLLO DE SOFTWARE", "estado": "Aprobada" }
     ]
   },
   {
