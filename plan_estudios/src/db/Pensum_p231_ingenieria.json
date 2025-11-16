@@ -16,7 +16,7 @@
       { "nombre": "ÁLGEBRA LINEAL", "estado": "Aprobada" },
       { "nombre": "CÁLCULO I", "estado": "Aprobada" },
       { "nombre": "FÍSICA Y LABORATORIO I", "estado": "Matriculada" },
-      { "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS", "estado": "Matriculada" },
+      { "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS", "estado": "Aprobada" },
       { "nombre": "ALGORITMOS Y PROGRAMACIÓN II", "estado": "Aprobada" },
       { "nombre": "PROGRAMACIÓN DE COMPUTADORES II", "estado": "Matriculada" }
     ]
