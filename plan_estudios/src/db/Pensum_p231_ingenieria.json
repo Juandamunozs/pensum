@@ -56,7 +56,7 @@
     "materias": [
       { "nombre": "INGLÉS IV", "estado": "Aprobada" },
       { "nombre": "GESTIÓN DE LA CONFIGURACIÓN", "estado": "Pendiente" },
-      { "nombre": "ADMINISTRACIÓN DE BASES DE DATOS", "estado": "Matriculada" },
+      { "nombre": "ADMINISTRACIÓN DE BASES DE DATOS", "estado": "Aprobada" },
       { "nombre": "ARQUITECTURA DE SOFTWARE", "estado": "Pendiente" },
       { "nombre": "DESARROLLO DE SOFTWARE", "estado": "Aprobada" }
     ]
