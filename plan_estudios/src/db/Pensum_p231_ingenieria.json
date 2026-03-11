@@ -26,8 +26,8 @@
     "materias": [
       { "nombre": "INGLÉS I", "estado": "Aprobada" },
       { "nombre": "CÁLCULO II", "estado": "Aprobada" },
-      { "nombre": "FÍSICA Y LABORATORIO II", "estado": "Pendiente" },
-      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Pendiente" },
+      { "nombre": "FÍSICA Y LABORATORIO II", "estado": "Matriculada" },
+      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Matriculada" },
       { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" }
     ]
   },
@@ -35,9 +35,9 @@
     "semestre": "Semestre IV",
     "materias": [
       { "nombre": "INGLÉS II", "estado": "Aprobada" },
-      { "nombre": "ECUACIONES DIFERENCIALES", "estado": "Pendiente" },
+      { "nombre": "ECUACIONES DIFERENCIALES", "estado": "Matriculada" },
       { "nombre": "PROYECTO INTEGRADOR BÁSICO", "estado": "Aprobada" },
-      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Pendiente" },
+      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Matriculada" },
       { "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS", "estado": "Pendiente" }
     ]
   },
@@ -46,7 +46,7 @@
     "materias": [
       { "nombre": "INGLÉS III", "estado": "Aprobada" },
       { "nombre": "TEORÍA DE GRAFOS", "estado": "Pendiente" },
-      { "nombre": "INVESTIGACIÓN DE OPERACIONES", "estado": "Pendiente" },
+      { "nombre": "INVESTIGACIÓN DE OPERACIONES", "estado": "Matriculada" },
       { "nombre": "BASES DE DATOS", "estado": "Aprobada" },
       { "nombre": "MODELADO Y ANÁLISIS DE SOFTWARE", "estado": "Pendiente" }
     ]
