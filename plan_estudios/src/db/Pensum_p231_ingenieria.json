@@ -37,7 +37,7 @@
       { "nombre": "INGLÉS II", "estado": "Aprobada" },
       { "nombre": "ECUACIONES DIFERENCIALES", "estado": "Matriculada" },
       { "nombre": "PROYECTO INTEGRADOR BÁSICO", "estado": "Aprobada" },
-      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Matriculada" },
+      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Aprobada" },
       { "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS", "estado": "Pendiente" }
     ]
   },
