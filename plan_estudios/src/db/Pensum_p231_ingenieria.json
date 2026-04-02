@@ -27,7 +27,7 @@
       { "nombre": "INGLÉS I", "estado": "Aprobada" },
       { "nombre": "CÁLCULO II", "estado": "Aprobada" },
       { "nombre": "FÍSICA Y LABORATORIO II", "estado": "Matriculada" },
-      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Matriculada" },
+      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Aprobada" },
       { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" }
     ]
   },
