@@ -2,9 +2,24 @@
   {
     "semestre": "FMI",
     "materias": [
-      { "nombre": "ARTE Y CULTURA", "estado": "Aprobada" },
-      { "nombre": "CÁTEDRA SANTIAGUINA", "estado": "Pendiente" },
-      { "nombre": "DEPORTE FORMATIVO", "estado": "Aprobada" }
+      {
+        "codigo": "ARC01",
+        "nombre": "ARTE Y CULTURA",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "CSI01",
+        "nombre": "CÁTEDRA SANTIAGUINA",
+        "estado": "Pendiente",
+        "requisitos": []
+      },
+      {
+        "codigo": "DEPR1",
+        "nombre": "DEPORTE FORMATIVO",
+        "estado": "Aprobada",
+        "requisitos": []
+      }
     ]
   }
 ]

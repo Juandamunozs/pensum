@@ -86,6 +86,19 @@ body {
   border-left: 4px solid #3b82f6;
 }
 
+.materia.Proximo {
+  background-color: #fef3c7;
+  color: #78350f;
+  border-left: 4px solid #fbbf24;
+}
+
+.materia.Disponible {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #78350f;
+  border-left: 4px solid #f59e0b;
+  box-shadow: 0 4px 10px rgba(245, 158, 11, 0.15);
+}
+
 .pensum-grid {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */

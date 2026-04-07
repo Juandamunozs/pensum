@@ -82,6 +82,34 @@ export default function Pensum() {
   const tiempoRestanteTecnologia = tiempoRestante(pensumTecnologia - now, pensumTecnologia);
   const tiempoRestanteIngenieria = tiempoRestante(pensumIngenieria - now, pensumIngenieria);
 
+  const estaDisponible = (materia, pensum) => {
+    const requisitos = materia.requisitos || [];
+
+    // Sin requisitos = disponible
+    if (requisitos.length === 0) return true;
+
+    // Guardar códigos aprobados
+    const aprobadas = new Set(
+      pensum
+        .flatMap((sem) => sem.materias)
+        .filter((m) => m.estado === "Aprobada")
+        .map((m) => m.codigo)
+    );
+
+    // Todos los códigos requisito deben estar aprobados
+    return requisitos.every((req) => aprobadas.has(req));
+  };
+
+  const obtenerEstadoVisual = (materia, pensum) => {
+    // Si ya está aprobada, matriculada, etc
+    if (materia.estado !== "Pendiente") {
+      return materia.estado;
+    }
+
+    return estaDisponible(materia, pensum)
+      ? "Disponible"
+      : "Pendiente";
+  };
 
   return (
     <div className="p-4">
@@ -92,13 +120,27 @@ export default function Pensum() {
           <div key={index} className="semestre-card">
             <h4 className="semestre-titulo">{semestre.semestre}</h4>
             <ul className="grid gap-2">
-              {semestre.materias.map((materia, i) => (
-                <li key={i} className={`materia ${materia.estado}`}>
-                  {materia.nombre}
-                  <br />
-                  <strong>{materia.estado}</strong>
-                </li>
-              ))}
+              {semestre.materias.map((materia, i) => {
+                const estadoVisual = obtenerEstadoVisual(
+                  materia,
+                  pensum_ingenieria
+                );
+
+                return (
+                  <li key={i} className={`materia ${estadoVisual}`}>
+                    <strong>{materia.codigo}</strong> - {materia.nombre}
+                    <br />
+                    <strong>{estadoVisual}</strong>
+                    <br />
+                    <small>
+                      Req:{" "}
+                      {materia.requisitos?.length
+                        ? materia.requisitos.join(", ")
+                        : "Ninguno"}
+                    </small>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
@@ -164,13 +206,27 @@ export default function Pensum() {
           <div key={index} className="semestre-card">
             <h4 className="semestre-titulo">{semestre.semestre}</h4>
             <ul className="grid gap-2">
-              {semestre.materias.map((materia, i) => (
-                <li key={i} className={`materia ${materia.estado}`}>
-                  {materia.nombre}
-                  <br />
-                  <strong>{materia.estado}</strong>
-                </li>
-              ))}
+              {semestre.materias.map((materia, i) => {
+                const estadoVisual = obtenerEstadoVisual(
+                  materia,
+                  pensum_tecnologia
+                );
+
+                return (
+                  <li key={i} className={`materia ${estadoVisual}`}>
+                    <strong>{materia.codigo}</strong> - {materia.nombre}
+                    <br />
+                    <strong>{estadoVisual}</strong>
+                    <br />
+                    <small>
+                      Req:{" "}
+                      {materia.requisitos?.length
+                        ? materia.requisitos.join(", ")
+                        : "Ninguno"}
+                    </small>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
@@ -228,13 +284,27 @@ export default function Pensum() {
           <div key={index} className="semestre-card">
             <h4 className="semestre-titulo">{semestre.semestre}</h4>
             <ul className="grid gap-2">
-              {semestre.materias.map((materia, i) => (
-                <li key={i} className={`materia ${materia.estado}`}>
-                  {materia.nombre}
-                  <br />
-                  <strong>{materia.estado}</strong>
-                </li>
-              ))}
+              {semestre.materias.map((materia, i) => {
+                const estadoVisual = obtenerEstadoVisual(
+                  materia,
+                  pensum_tecnologia
+                );
+
+                return (
+                  <li key={i} className={`materia ${estadoVisual}`}>
+                    <strong>{materia.codigo}</strong> - {materia.nombre}
+                    <br />
+                    <strong>{estadoVisual}</strong>
+                    <br />
+                    <small>
+                      Req:{" "}
+                      {materia.requisitos?.length
+                        ? materia.requisitos.join(", ")
+                        : "Ninguno"}
+                    </small>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}

@@ -2,102 +2,357 @@
   {
     "semestre": "Semestre I",
     "materias": [
-      { "nombre": "INTRODUCCIÓN A LA INGENIERÍA", "estado": "Aprobada" },
-      { "nombre": "MATEMÁTICAS FUNDAMENTALES", "estado": "Aprobada" },
-      { "nombre": "MATEMÁTICAS DISCRETAS", "estado": "Aprobada" },
-      { "nombre": "TÉCNICAS PARA EL APRENDIZAJE EN LA MODALIDAD VIRTUAL", "estado": "Aprobada" },
-      { "nombre": "ALGORITMOS Y PROGRAMACIÓN I", "estado": "Aprobada" },
-      { "nombre": "PROGRAMACIÓN DE COMPUTADORES I", "estado": "Aprobada" }
+      {
+        "codigo": "IGS01",
+        "nombre": "INTRODUCCIÓN A LA INGENIERÍA",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS02",
+        "nombre": "MATEMÁTICAS FUNDAMENTALES",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS03",
+        "nombre": "MATEMÁTICAS DISCRETAS",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS04",
+        "nombre": "TÉCNICAS PARA EL APRENDIZAJE EN LA MODALIDAD VIRTUAL",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS05",
+        "nombre": "ALGORITMOS Y PROGRAMACIÓN I",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS06",
+        "nombre": "PROGRAMACIÓN DE COMPUTADORES I",
+        "estado": "Aprobada",
+        "requisitos": []
+      }
     ]
   },
   {
     "semestre": "Semestre II",
     "materias": [
-      { "nombre": "ÁLGEBRA LINEAL", "estado": "Aprobada" },
-      { "nombre": "CÁLCULO I", "estado": "Aprobada" },
-      { "nombre": "FÍSICA Y LABORATORIO I", "estado": "Aprobada" },
-      { "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS", "estado": "Aprobada" },
-      { "nombre": "ALGORITMOS Y PROGRAMACIÓN II", "estado": "Aprobada" },
-      { "nombre": "PROGRAMACIÓN DE COMPUTADORES II", "estado": "Aprobada" }
+      {
+        "codigo": "IGS07",
+        "nombre": "ÁLGEBRA LINEAL",
+        "estado": "Aprobada",
+        "requisitos": ["IGS02"]
+      },
+      {
+        "codigo": "IGS08",
+        "nombre": "CÁLCULO I",
+        "estado": "Aprobada",
+        "requisitos": ["IGS02"]
+      },
+      {
+        "codigo": "IGS09",
+        "nombre": "FÍSICA Y LABORATORIO I",
+        "estado": "Aprobada",
+        "requisitos": ["IGS02"]
+      },
+      {
+        "codigo": "IGS10",
+        "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS01"]
+      },
+      {
+        "codigo": "IGS11",
+        "nombre": "ALGORITMOS Y PROGRAMACIÓN II",
+        "estado": "Aprobada",
+        "requisitos": ["IGS05"]
+      },
+      {
+        "codigo": "IGS12",
+        "nombre": "PROGRAMACIÓN DE COMPUTADORES II",
+        "estado": "Aprobada",
+        "requisitos": ["IGS06"]
+      }
     ]
   },
   {
     "semestre": "Semestre III",
     "materias": [
-      { "nombre": "INGLÉS I", "estado": "Aprobada" },
-      { "nombre": "CÁLCULO II", "estado": "Aprobada" },
-      { "nombre": "FÍSICA Y LABORATORIO II", "estado": "Matriculada" },
-      { "nombre": "ANÁLISIS DE ALGORITMOS", "estado": "Aprobada" },
-      { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" }
+      {
+        "codigo": "IGS13",
+        "nombre": "INGLÉS I",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS14",
+        "nombre": "CÁLCULO II",
+        "estado": "Aprobada",
+        "requisitos": ["IGS08"] 
+      },
+      {
+        "codigo": "IGS15",
+        "nombre": "FÍSICA Y LABORATORIO II",
+        "estado": "Matriculada",
+        "requisitos": ["IGS09"]
+      },
+      {
+        "codigo": "IGS16",
+        "nombre": "ANÁLISIS DE ALGORITMOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS12"]
+      },
+      {
+        "codigo": "IGS17",
+        "nombre": "ESTRUCTURA DE DATOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS12"]
+      }
     ]
   },
   {
     "semestre": "Semestre IV",
     "materias": [
-      { "nombre": "INGLÉS II", "estado": "Aprobada" },
-      { "nombre": "ECUACIONES DIFERENCIALES", "estado": "Matriculada" },
-      { "nombre": "PROYECTO INTEGRADOR BÁSICO", "estado": "Aprobada" },
-      { "nombre": "ESTADÍSTICA Y PROBABILIDAD", "estado": "Aprobada" },
-      { "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS", "estado": "Pendiente" }
+      {
+        "codigo": "IGS18",
+        "nombre": "INGLÉS II",
+        "estado": "Aprobada",
+        "requisitos": ["IGS13"]
+      },
+      {
+        "codigo": "IGS19",
+        "nombre": "ECUACIONES DIFERENCIALES",
+        "estado": "Matriculada",
+        "requisitos": ["IGS14"]
+      },
+      {
+        "codigo": "IGS20",
+        "nombre": "PROYECTO INTEGRADOR BÁSICO",
+        "estado": "Aprobada",
+        "requisitos": ["IGS01"]
+      },
+      {
+        "codigo": "IGS21",
+        "nombre": "ESTADÍSTICA Y PROBABILIDAD",
+        "estado": "Aprobada",
+        "requisitos": ["IGS02"]
+      },
+      {
+        "codigo": "IGS22",
+        "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS",
+        "estado": "Pendiente",
+        "requisitos": ["IGS16", "IGS17"]
+      }
     ]
   },
   {
     "semestre": "Semestre V",
     "materias": [
-      { "nombre": "INGLÉS III", "estado": "Aprobada" },
-      { "nombre": "TEORÍA DE GRAFOS", "estado": "Pendiente" },
-      { "nombre": "INVESTIGACIÓN DE OPERACIONES", "estado": "Matriculada" },
-      { "nombre": "BASES DE DATOS", "estado": "Aprobada" },
-      { "nombre": "MODELADO Y ANÁLISIS DE SOFTWARE", "estado": "Pendiente" }
+      {
+        "codigo": "IGS23",
+        "nombre": "INGLÉS III",
+        "estado": "Aprobada",
+        "requisitos": ["IGS18"]
+      },
+      {
+        "codigo": "IGS24",
+        "nombre": "TEORÍA DE GRAFOS",
+        "estado": "Pendiente",
+        "requisitos": ["IGS16", "IGS17"]
+      },
+      {
+        "codigo": "IGS25",
+        "nombre": "INVESTIGACIÓN DE OPERACIONES",
+        "estado": "Matriculada",
+        "requisitos": ["IGS02"]
+      },
+      {
+        "codigo": "IGS26",
+        "nombre": "BASES DE DATOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS16", "IGS17"]
+      },
+      {
+        "codigo": "IGS27",
+        "nombre": "MODELADO Y ANÁLISIS DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS22"]
+      }
     ]
   },
   {
     "semestre": "Semestre VI",
     "materias": [
-      { "nombre": "INGLÉS IV", "estado": "Aprobada" },
-      { "nombre": "GESTIÓN DE LA CONFIGURACIÓN", "estado": "Pendiente" },
-      { "nombre": "ADMINISTRACIÓN DE BASES DE DATOS", "estado": "Aprobada" },
-      { "nombre": "ARQUITECTURA DE SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "DESARROLLO DE SOFTWARE", "estado": "Aprobada" }
+      {
+        "codigo": "IGS28",
+        "nombre": "INGLÉS IV",
+        "estado": "Aprobada",
+        "requisitos": ["IGS23"]
+      },
+      {
+        "codigo": "IGS29",
+        "nombre": "GESTIÓN DE LA CONFIGURACIÓN",
+        "estado": "Pendiente",
+        "requisitos": ["IGS26", "IGS27"]
+      },
+      {
+        "codigo": "IGS30",
+        "nombre": "ADMINISTRACIÓN DE BASES DE DATOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS26"]
+      },
+      {
+        "codigo": "IGS31",
+        "nombre": "ARQUITECTURA DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS26", "IGS27"]
+      },
+      {
+        "codigo": "IGS32",
+        "nombre": "DESARROLLO DE SOFTWARE",
+        "estado": "Aprobada",
+        "requisitos": ["IGS26"]
+      }
     ]
   },
   {
     "semestre": "Semestre VII",
     "materias": [
-      { "nombre": "CONSTITUCIÓN POLÍTICA", "estado": "Aprobada" },
-      { "nombre": "RAZONAMIENTO CUANTITATIVO", "estado": "Aprobada" },
-      { "nombre": "SISTEMAS OPERATIVOS", "estado": "Aprobada" },
-      { "nombre": "METODOLOGÍAS DEL SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "DESARROLLO DE APLICACIONES EN LA WEB", "estado": "Aprobada" }
+      {
+        "codigo": "IGS33",
+        "nombre": "CONSTITUCIÓN POLÍTICA",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS34",
+        "nombre": "RAZONAMIENTO CUANTITATIVO",
+        "estado": "Aprobada",
+        "requisitos": ["IGS21"]
+      },
+      {
+        "codigo": "IGS35",
+        "nombre": "SISTEMAS OPERATIVOS",
+        "estado": "Aprobada",
+        "requisitos": ["IGS24", "IGS29"]
+      },
+      {
+        "codigo": "IGS36",
+        "nombre": "METODOLOGÍAS DEL SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS27", "IGS31"]
+      },
+      {
+        "codigo": "IGS37",
+        "nombre": "DESARROLLO DE APLICACIONES EN LA WEB",
+        "estado": "Aprobada",
+        "requisitos": ["IGS27", "IGS31"]
+      }
     ]
   },
   {
     "semestre": "Semestre VIII",
     "materias": [
-      { "nombre": "ELECTIVA I", "estado": "Pendiente" },
-      { "nombre": "PROYECTO INTEGRADOR PROFESIONAL", "estado": "Pendiente" },
-      { "nombre": "ARQUITECTURA DE COMPUTADORES", "estado": "Pendiente" },
-      { "nombre": "VERIFICACIÓN Y VALIDACIÓN DE SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "PATRONES DE DISEÑO DE SOFTWARE", "estado": "Pendiente" }
+      {
+        "codigo": "IGS38",
+        "nombre": "ELECTIVA I",
+        "estado": "Pendiente",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS39",
+        "nombre": "PROYECTO INTEGRADOR PROFESIONAL",
+        "estado": "Pendiente",
+        "requisitos": ["IGS20"]
+      },
+      {
+        "codigo": "IGS40",
+        "nombre": "ARQUITECTURA DE COMPUTADORES",
+        "estado": "Pendiente",
+        "requisitos": ["IGS31", "IGS35"]
+      },
+      {
+        "codigo": "IGS41",
+        "nombre": "VERIFICACIÓN Y VALIDACIÓN DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS27", "IGS32"]
+      },
+      {
+        "codigo": "IGS42",
+        "nombre": "PATRONES DE DISEÑO DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS27", "IGS32"]
+      }
     ]
   },
   {
     "semestre": "Semestre IX",
     "materias": [
-      { "nombre": "ELECTIVA II", "estado": "Pendiente" },
-      { "nombre": "MÉTODOS FORMALES EN ESPECIFICACIÓN Y DISEÑO", "estado": "Pendiente" },
-      { "nombre": "PROTOCOLOS DE REDES", "estado": "Pendiente" },
-      { "nombre": "CALIDAD Y PRUEBAS DE SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES", "estado": "Aprobada" }
+      {
+        "codigo": "IGS43",
+        "nombre": "ELECTIVA II",
+        "estado": "Pendiente",
+        "requisitos": []
+      },
+      {
+        "codigo": "IGS44",
+        "nombre": "MÉTODOS FORMALES EN ESPECIFICACIÓN Y DISEÑO",
+        "estado": "Pendiente",
+        "requisitos": ["IGS41", "IGS42"]
+      },
+      {
+        "codigo": "IGS45",
+        "nombre": "PROTOCOLOS DE REDES",
+        "estado": "Pendiente",
+        "requisitos": ["IGS37"]
+      },
+      {
+        "codigo": "IGS46",
+        "nombre": "CALIDAD Y PRUEBAS DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS41"]
+      },
+      {
+        "codigo": "IGS47",
+        "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES",
+        "estado": "Aprobada",
+        "requisitos": ["IGS37"]
+      }
     ]
   },
   {
     "semestre": "Semestre X",
     "materias": [
-      { "nombre": "PROYECTO INTEGRADOR DE GRADO", "estado": "Pendiente" },
-      { "nombre": "BUENAS PRÁCTICAS PROFESIONALES EN INGENIERÍA", "estado": "Pendiente" },
-      { "nombre": "SEGURIDAD DE SOFTWARE", "estado": "Pendiente" },
-      { "nombre": "GESTIÓN DE PROYECTOS DE INGENIERÍA", "estado": "Pendiente" }
+      {
+        "codigo": "IGS48",
+        "nombre": "PROYECTO INTEGRADOR DE GRADO",
+        "estado": "Pendiente",
+        "requisitos": ["IGS39"]
+      },
+      {
+        "codigo": "IGS49",
+        "nombre": "BUENAS PRÁCTICAS PROFESIONALES EN INGENIERÍA",
+        "estado": "Pendiente",
+        "requisitos": ["IGS39"]
+      },
+      {
+        "codigo": "IGS50",
+        "nombre": "SEGURIDAD DE SOFTWARE",
+        "estado": "Pendiente",
+        "requisitos": ["IGS37", "IGS47"]
+      },
+      {
+        "codigo": "IGS51",
+        "nombre": "GESTIÓN DE PROYECTOS DE INGENIERÍA",
+        "estado": "Pendiente",
+        "requisitos": ["IGS39"]
+      }
     ]
   }
 ]

@@ -2,64 +2,229 @@
   {
     "semestre": "Semestre I",
     "materias": [
-      { "nombre": "CURSO I CAMPO CIENTIFICO NATURAL", "estado": "Aprobada" },
-      { "nombre": "CURSO I CAMPO TECNOLOGICO", "estado": "Aprobada" },
-      { "nombre": "ALGORITMIA Y PROGRAMACION I", "estado": "Aprobada" },
-      { "nombre": "INTRODUCCION A LA TECNOLOGIA", "estado": "Aprobada" },
-      { "nombre": "CURSO I CAMPO COMUNICACION Y LENGUAJE", "estado": "Aprobada" }
+      {
+        "codigo": "ITS01",
+        "nombre": "CURSO I CAMPO CIENTIFICO NATURAL",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS02",
+        "nombre": "CURSO I CAMPO TECNOLOGICO",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS03",
+        "nombre": "ALGORITMIA Y PROGRAMACION I",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS04",
+        "nombre": "INTRODUCCION A LA TECNOLOGIA",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS05",
+        "nombre": "CURSO I CAMPO COMUNICACION Y LENGUAJE",
+        "estado": "Aprobada",
+        "requisitos": []
+      }
     ]
   },
   {
     "semestre": "Semestre II",
     "materias": [
-      { "nombre": "CALCULO I", "estado": "Aprobada" },
-      { "nombre": "FISICA", "estado": "Aprobada" },
-      { "nombre": "INGLES I", "estado": "Aprobada" },
-      { "nombre": "CONSTITUCION POLITICA", "estado": "Aprobada" },
-      { "nombre": "ALGORITMIA Y PROGRAMACION II", "estado": "Aprobada" },
-      { "nombre": "ELECTIVA DE AREA I", "estado": "Aprobada" }
+      {
+        "codigo": "ITS06",
+        "nombre": "CALCULO I",
+        "estado": "Aprobada",
+        "requisitos": ["ITS01"]
+      },
+      {
+        "codigo": "ITS07",
+        "nombre": "FISICA",
+        "estado": "Aprobada",
+        "requisitos": ["ITS01"]
+      },
+      {
+        "codigo": "ITS08",
+        "nombre": "INGLES I",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS09",
+        "nombre": "CONSTITUCION POLITICA",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS10",
+        "nombre": "ALGORITMIA Y PROGRAMACION II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS03"]
+      },
+      {
+        "codigo": "ITS11",
+        "nombre": "ELECTIVA DE AREA I",
+        "estado": "Aprobada",
+        "requisitos": []
+      }
     ]
   },
   {
     "semestre": "Semestre III",
     "materias": [
-      { "nombre": "ESTRUCTURA DE DATOS", "estado": "Aprobada" },
-      { "nombre": "LABORATORIO DE BASES DE DATOS", "estado": "Aprobada" },
-      { "nombre": "CALCULO II", "estado": "Aprobada" },
-      { "nombre": "CURSO I CAMPO GESTION", "estado": "Aprobada" },
-      { "nombre": "INGLES II", "estado": "Aprobada" },
-      { "nombre": "CONSTRUCCION DE SOFTWARE I", "estado": "Aprobada" }
+      {
+        "codigo": "ITS12",
+        "nombre": "ESTRUCTURA DE DATOS",
+        "estado": "Aprobada",
+        "requisitos": ["ITS10"]
+      },
+      {
+        "codigo": "ITS13",
+        "nombre": "LABORATORIO DE BASES DE DATOS",
+        "estado": "Aprobada",
+        "requisitos": ["ITS02"]
+      },
+      {
+        "codigo": "ITS14",
+        "nombre": "CALCULO II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS06"]
+      },
+      {
+        "codigo": "ITS15",
+        "nombre": "CURSO I CAMPO GESTION",
+        "estado": "Aprobada",
+        "requisitos": ["ITS04"]
+      },
+      {
+        "codigo": "ITS16",
+        "nombre": "INGLES II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS08"]
+      },
+      {
+        "codigo": "ITS17",
+        "nombre": "CONSTRUCCION DE SOFTWARE I",
+        "estado": "Aprobada",
+        "requisitos": ["ITS10"]
+      }
     ]
   },
   {
     "semestre": "Semestre IV",
     "materias": [
-      { "nombre": "CURSO CAMPO SOCIO POLITICO, FILOSOFICO Y HUMANISTIC", "estado": "Aprobada" },
-      { "nombre": "CURSO I CAMPO INVESTIGATIVO", "estado": "Aprobada" },
-      { "nombre": "PROYECTO INTEGRADOR BASICO", "estado": "Aprobada" },
-      { "nombre": "ADMINISTRACION DE SISTEMAS OPERATIVOS", "estado": "Aprobada" },
-      { "nombre": "CONSTRUCCION DE SOFTWARE II", "estado": "Aprobada" },
-      { "nombre": "INGLES III", "estado": "Aprobada" }
+      {
+        "codigo": "ITS18",
+        "nombre": "CURSO CAMPO SOCIO POLITICO, FILOSOFICO Y HUMANISTICO",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS19",
+        "nombre": "CURSO I CAMPO INVESTIGATIVO",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS20",
+        "nombre": "PROYECTO INTEGRADOR BASICO",
+        "estado": "Aprobada",
+        "requisitos": []
+      },
+      {
+        "codigo": "ITS21",
+        "nombre": "ADMINISTRACION DE SISTEMAS OPERATIVOS",
+        "estado": "Aprobada",
+        "requisitos": ["ITS02"]
+      },
+      {
+        "codigo": "ITS22",
+        "nombre": "CONSTRUCCION DE SOFTWARE II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS23",
+        "nombre": "INGLES III",
+        "estado": "Aprobada",
+        "requisitos": ["ITS16"]
+      }
     ]
   },
   {
     "semestre": "Semestre V",
     "materias": [
-      { "nombre": "REDES Y COMUNICACIONES", "estado": "Aprobada" },
-      { "nombre": "MANTENIMIENTO Y ENSAMBLE DE HARDWARE", "estado": "Aprobada" },
-      { "nombre": "PROGRAMACION DE DISPOSITIVOS MOVILES", "estado": "Aprobada" },
-      { "nombre": "ELECTIVA DE PROFUNDIZACION I", "estado": "Aprobada" },
-      { "nombre": "PROGRAMACION ORIENTADA A LA WEB", "estado": "Aprobada" }
+      {
+        "codigo": "ITS24",
+        "nombre": "REDES Y COMUNICACIONES",
+        "estado": "Aprobada",
+        "requisitos": ["ITS02"]
+      },
+      {
+        "codigo": "ITS25",
+        "nombre": "MANTENIMIENTO Y ENSAMBLE DE HARDWARE",
+        "estado": "Aprobada",
+        "requisitos": ["ITS02"]
+      },
+      {
+        "codigo": "ITS26",
+        "nombre": "PROGRAMACION DE DISPOSITIVOS MOVILES",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS27",
+        "nombre": "ELECTIVA DE PROFUNDIZACION I",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS28",
+        "nombre": "PROGRAMACION ORIENTADA A LA WEB",
+        "estado": "Aprobada",
+        "requisitos": ["ITS10"]
+      }
     ]
   },
   {
     "semestre": "Semestre VI",
     "materias": [
-      { "nombre": "ELECTIVA DE AREA II", "estado": "Aprobada" },
-      { "nombre": "ELECTIVA DE PROFUNDIZACION II", "estado": "Aprobada" },
-      { "nombre": "ELECTIVA DE PROFUNDIZACION III", "estado": "Aprobada" },
-      { "nombre": "ELECTIVA DE PROFUNDIZACION IV", "estado": "Aprobada" },
-      { "nombre": "PRACTICA EMPRESARIAL", "estado": "Aprobada" }
+      {
+        "codigo": "ITS29",
+        "nombre": "ELECTIVA DE AREA II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS11"]
+      },
+      {
+        "codigo": "ITS30",
+        "nombre": "ELECTIVA DE PROFUNDIZACION II",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS31",
+        "nombre": "ELECTIVA DE PROFUNDIZACION III",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS32",
+        "nombre": "ELECTIVA DE PROFUNDIZACION IV",
+        "estado": "Aprobada",
+        "requisitos": ["ITS17"]
+      },
+      {
+        "codigo": "ITS33",
+        "nombre": "PRACTICA EMPRESARIAL",
+        "estado": "Aprobada",
+        "requisitos": []
+      }
     ]
   }
 ]
