@@ -99,7 +99,7 @@
       {
         "codigo": "IGS15",
         "nombre": "FÍSICA Y LABORATORIO II",
-        "estado": "Matriculada",
+        "estado": "Aprobada",
         "requisitos": ["IGS09"]
       },
       {
@@ -128,7 +128,7 @@
       {
         "codigo": "IGS19",
         "nombre": "ECUACIONES DIFERENCIALES",
-        "estado": "Matriculada",
+        "estado": "Aprobada",
         "requisitos": ["IGS14"]
       },
       {
@@ -169,7 +169,7 @@
       {
         "codigo": "IGS25",
         "nombre": "INVESTIGACIÓN DE OPERACIONES",
-        "estado": "Matriculada",
+        "estado": "Aprobada",
         "requisitos": ["IGS02"]
       },
       {
