@@ -146,7 +146,7 @@
       {
         "codigo": "IGS22",
         "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS",
-        "estado": "Pendiente",
+        "estado": "Matricular",
         "requisitos": ["IGS16", "IGS17"]
       }
     ]
@@ -163,7 +163,7 @@
       {
         "codigo": "IGS24",
         "nombre": "TEORÍA DE GRAFOS",
-        "estado": "Pendiente",
+        "estado": "Matricular",
         "requisitos": ["IGS16", "IGS17"]
       },
       {
@@ -262,13 +262,13 @@
       {
         "codigo": "IGS38",
         "nombre": "ELECTIVA I",
-        "estado": "Pendiente",
+        "estado": "Matricular",
         "requisitos": []
       },
       {
         "codigo": "IGS39",
         "nombre": "PROYECTO INTEGRADOR PROFESIONAL",
-        "estado": "Pendiente",
+        "estado": "Matricular",
         "requisitos": ["IGS20"]
       },
       {
@@ -309,7 +309,7 @@
       {
         "codigo": "IGS45",
         "nombre": "PROTOCOLOS DE REDES",
-        "estado": "Pendiente",
+        "estado": "Matricular",
         "requisitos": ["IGS37"]
       },
       {
