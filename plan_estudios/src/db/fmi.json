@@ -6,18 +6,21 @@
         "codigo": "ARC01",
         "nombre": "ARTE Y CULTURA",
         "estado": "Aprobada",
+        "nota": 46.4,
         "requisitos": []
       },
       {
         "codigo": "CSI01",
         "nombre": "CÁTEDRA SANTIAGUINA",
         "estado": "Pendiente",
+        "nota": null,
         "requisitos": []
       },
       {
         "codigo": "DEPR1",
         "nombre": "DEPORTE FORMATIVO",
         "estado": "Aprobada",
+        "nota": 49.7,
         "requisitos": []
       }
     ]

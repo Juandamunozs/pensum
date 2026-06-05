@@ -6,30 +6,35 @@
         "codigo": "ITS01",
         "nombre": "CURSO I CAMPO CIENTIFICO NATURAL",
         "estado": "Aprobada",
+        "nota": 43,
         "requisitos": []
       },
       {
         "codigo": "ITS02",
         "nombre": "CURSO I CAMPO TECNOLOGICO",
         "estado": "Aprobada",
+        "nota": 47,
         "requisitos": []
       },
       {
         "codigo": "ITS03",
         "nombre": "ALGORITMIA Y PROGRAMACION I",
         "estado": "Aprobada",
+        "nota": 42,
         "requisitos": []
       },
       {
         "codigo": "ITS04",
         "nombre": "INTRODUCCION A LA TECNOLOGIA",
         "estado": "Aprobada",
+        "nota": 41,
         "requisitos": []
       },
       {
         "codigo": "ITS05",
         "nombre": "CURSO I CAMPO COMUNICACION Y LENGUAJE",
         "estado": "Aprobada",
+        "nota": 47,
         "requisitos": []
       }
     ]
@@ -41,36 +46,42 @@
         "codigo": "ITS06",
         "nombre": "CALCULO I",
         "estado": "Aprobada",
+        "nota": 31,
         "requisitos": ["ITS01"]
       },
       {
         "codigo": "ITS07",
         "nombre": "FISICA",
         "estado": "Aprobada",
+        "nota": 30,
         "requisitos": ["ITS01"]
       },
       {
         "codigo": "ITS08",
         "nombre": "INGLES I",
         "estado": "Aprobada",
+        "nota": 32,
         "requisitos": []
       },
       {
         "codigo": "ITS09",
         "nombre": "CONSTITUCION POLITICA",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": []
       },
       {
         "codigo": "ITS10",
         "nombre": "ALGORITMIA Y PROGRAMACION II",
         "estado": "Aprobada",
+        "nota": 46,
         "requisitos": ["ITS03"]
       },
       {
         "codigo": "ITS11",
         "nombre": "ELECTIVA DE AREA I",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": []
       }
     ]
@@ -82,36 +93,42 @@
         "codigo": "ITS12",
         "nombre": "ESTRUCTURA DE DATOS",
         "estado": "Aprobada",
+        "nota": 37,
         "requisitos": ["ITS10"]
       },
       {
         "codigo": "ITS13",
         "nombre": "LABORATORIO DE BASES DE DATOS",
         "estado": "Aprobada",
+        "nota": 39,
         "requisitos": ["ITS02"]
       },
       {
         "codigo": "ITS14",
         "nombre": "CALCULO II",
         "estado": "Aprobada",
+        "nota": 35,
         "requisitos": ["ITS06"]
       },
       {
         "codigo": "ITS15",
         "nombre": "CURSO I CAMPO GESTION",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["ITS04"]
       },
       {
         "codigo": "ITS16",
         "nombre": "INGLES II",
         "estado": "Aprobada",
+        "nota": 38,
         "requisitos": ["ITS08"]
       },
       {
         "codigo": "ITS17",
         "nombre": "CONSTRUCCION DE SOFTWARE I",
         "estado": "Aprobada",
+        "nota": 44,
         "requisitos": ["ITS10"]
       }
     ]
@@ -123,36 +140,42 @@
         "codigo": "ITS18",
         "nombre": "CURSO CAMPO SOCIO POLITICO, FILOSOFICO Y HUMANISTICO",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": []
       },
       {
         "codigo": "ITS19",
         "nombre": "CURSO I CAMPO INVESTIGATIVO",
         "estado": "Aprobada",
+        "nota": 45,
         "requisitos": []
       },
       {
         "codigo": "ITS20",
         "nombre": "PROYECTO INTEGRADOR BASICO",
         "estado": "Aprobada",
+        "nota": 39,
         "requisitos": []
       },
       {
         "codigo": "ITS21",
         "nombre": "ADMINISTRACION DE SISTEMAS OPERATIVOS",
         "estado": "Aprobada",
+        "nota": 42,
         "requisitos": ["ITS02"]
       },
       {
         "codigo": "ITS22",
         "nombre": "CONSTRUCCION DE SOFTWARE II",
         "estado": "Aprobada",
+        "nota": 43,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS23",
         "nombre": "INGLES III",
         "estado": "Aprobada",
+        "nota": 46,
         "requisitos": ["ITS16"]
       }
     ]
@@ -164,30 +187,35 @@
         "codigo": "ITS24",
         "nombre": "REDES Y COMUNICACIONES",
         "estado": "Aprobada",
+        "nota": 45,
         "requisitos": ["ITS02"]
       },
       {
         "codigo": "ITS25",
         "nombre": "MANTENIMIENTO Y ENSAMBLE DE HARDWARE",
         "estado": "Aprobada",
+        "nota": 47,
         "requisitos": ["ITS02"]
       },
       {
         "codigo": "ITS26",
         "nombre": "PROGRAMACION DE DISPOSITIVOS MOVILES",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS27",
         "nombre": "ELECTIVA DE PROFUNDIZACION I",
         "estado": "Aprobada",
+        "nota": 40,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS28",
         "nombre": "PROGRAMACION ORIENTADA A LA WEB",
         "estado": "Aprobada",
+        "nota": 48,
         "requisitos": ["ITS10"]
       }
     ]
@@ -199,30 +227,35 @@
         "codigo": "ITS29",
         "nombre": "ELECTIVA DE AREA II",
         "estado": "Aprobada",
+        "nota": 44,
         "requisitos": ["ITS11"]
       },
       {
         "codigo": "ITS30",
         "nombre": "ELECTIVA DE PROFUNDIZACION II",
         "estado": "Aprobada",
+        "nota": 47,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS31",
         "nombre": "ELECTIVA DE PROFUNDIZACION III",
         "estado": "Aprobada",
+        "nota": 45,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS32",
         "nombre": "ELECTIVA DE PROFUNDIZACION IV",
         "estado": "Aprobada",
+        "nota": 43,
         "requisitos": ["ITS17"]
       },
       {
         "codigo": "ITS33",
         "nombre": "PRACTICA EMPRESARIAL",
         "estado": "Aprobada",
+        "nota": 45,
         "requisitos": []
       }
     ]

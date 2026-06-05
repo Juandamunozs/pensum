@@ -6,36 +6,42 @@
         "codigo": "IGS01",
         "nombre": "INTRODUCCIÓN A LA INGENIERÍA",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": []
       },
       {
         "codigo": "IGS02",
         "nombre": "MATEMÁTICAS FUNDAMENTALES",
         "estado": "Aprobada",
+        "nota": 48,
         "requisitos": []
       },
       {
         "codigo": "IGS03",
         "nombre": "MATEMÁTICAS DISCRETAS",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": []
       },
       {
         "codigo": "IGS04",
         "nombre": "TÉCNICAS PARA EL APRENDIZAJE EN LA MODALIDAD VIRTUAL",
         "estado": "Aprobada",
+        "nota": 48,
         "requisitos": []
       },
       {
         "codigo": "IGS05",
         "nombre": "ALGORITMOS Y PROGRAMACIÓN I",
         "estado": "Aprobada",
+        "nota": 42,
         "requisitos": []
       },
       {
         "codigo": "IGS06",
         "nombre": "PROGRAMACIÓN DE COMPUTADORES I",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": []
       }
     ]
@@ -47,36 +53,42 @@
         "codigo": "IGS07",
         "nombre": "ÁLGEBRA LINEAL",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["IGS02"]
       },
       {
         "codigo": "IGS08",
         "nombre": "CÁLCULO I",
         "estado": "Aprobada",
+        "nota": 31,
         "requisitos": ["IGS02"]
       },
       {
         "codigo": "IGS09",
         "nombre": "FÍSICA Y LABORATORIO I",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": ["IGS02"]
       },
       {
         "codigo": "IGS10",
         "nombre": "INTRODUCCIÓN A LOS SISTEMAS INFORMÁTICOS",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": ["IGS01"]
       },
       {
         "codigo": "IGS11",
         "nombre": "ALGORITMOS Y PROGRAMACIÓN II",
         "estado": "Aprobada",
+        "nota": 46,
         "requisitos": ["IGS05"]
       },
       {
         "codigo": "IGS12",
         "nombre": "PROGRAMACIÓN DE COMPUTADORES II",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["IGS06"]
       }
     ]
@@ -88,30 +100,35 @@
         "codigo": "IGS13",
         "nombre": "INGLÉS I",
         "estado": "Aprobada",
+        "nota": 32,
         "requisitos": []
       },
       {
         "codigo": "IGS14",
         "nombre": "CÁLCULO II",
         "estado": "Aprobada",
+        "nota": 35,
         "requisitos": ["IGS08"] 
       },
       {
         "codigo": "IGS15",
         "nombre": "FÍSICA Y LABORATORIO II",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["IGS09"]
       },
       {
         "codigo": "IGS16",
         "nombre": "ANÁLISIS DE ALGORITMOS",
         "estado": "Aprobada",
+        "nota": 44,
         "requisitos": ["IGS12"]
       },
       {
         "codigo": "IGS17",
         "nombre": "ESTRUCTURA DE DATOS",
         "estado": "Aprobada",
+        "nota": 37,
         "requisitos": ["IGS12"]
       }
     ]
@@ -123,30 +140,34 @@
         "codigo": "IGS18",
         "nombre": "INGLÉS II",
         "estado": "Aprobada",
+        "nota": 38,
         "requisitos": ["IGS13"]
       },
       {
         "codigo": "IGS19",
         "nombre": "ECUACIONES DIFERENCIALES",
         "estado": "Aprobada",
+        "nota": 39,
         "requisitos": ["IGS14"]
       },
       {
         "codigo": "IGS20",
         "nombre": "PROYECTO INTEGRADOR BÁSICO",
         "estado": "Aprobada",
+        "nota": 39,
         "requisitos": ["IGS01"]
       },
       {
         "codigo": "IGS21",
         "nombre": "ESTADÍSTICA Y PROBABILIDAD",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": ["IGS02"]
       },
       {
         "codigo": "IGS22",
         "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS",
-        "estado": "Matricular",
+        "estado": "Matriculada",
         "requisitos": ["IGS16", "IGS17"]
       }
     ]
@@ -158,24 +179,27 @@
         "codigo": "IGS23",
         "nombre": "INGLÉS III",
         "estado": "Aprobada",
+        "nota": 46,
         "requisitos": ["IGS18"]
       },
       {
         "codigo": "IGS24",
         "nombre": "TEORÍA DE GRAFOS",
-        "estado": "Matricular",
+        "estado": "Matriculada",
         "requisitos": ["IGS16", "IGS17"]
       },
       {
         "codigo": "IGS25",
         "nombre": "INVESTIGACIÓN DE OPERACIONES",
         "estado": "Aprobada",
+        "nota": 46,
         "requisitos": ["IGS02"]
       },
       {
         "codigo": "IGS26",
         "nombre": "BASES DE DATOS",
         "estado": "Aprobada",
+        "nota": 39,
         "requisitos": ["IGS16", "IGS17"]
       },
       {
@@ -193,6 +217,7 @@
         "codigo": "IGS28",
         "nombre": "INGLÉS IV",
         "estado": "Aprobada",
+        "nota": 48,
         "requisitos": ["IGS23"]
       },
       {
@@ -205,6 +230,7 @@
         "codigo": "IGS30",
         "nombre": "ADMINISTRACIÓN DE BASES DE DATOS",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["IGS26"]
       },
       {
@@ -217,6 +243,7 @@
         "codigo": "IGS32",
         "nombre": "DESARROLLO DE SOFTWARE",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": ["IGS26"]
       }
     ]
@@ -228,18 +255,21 @@
         "codigo": "IGS33",
         "nombre": "CONSTITUCIÓN POLÍTICA",
         "estado": "Aprobada",
+        "nota": 50,
         "requisitos": []
       },
       {
         "codigo": "IGS34",
         "nombre": "RAZONAMIENTO CUANTITATIVO",
         "estado": "Aprobada",
+        "nota": 43,
         "requisitos": ["IGS21"]
       },
       {
         "codigo": "IGS35",
         "nombre": "SISTEMAS OPERATIVOS",
         "estado": "Aprobada",
+        "nota": 42,
         "requisitos": ["IGS24", "IGS29"]
       },
       {
@@ -252,6 +282,7 @@
         "codigo": "IGS37",
         "nombre": "DESARROLLO DE APLICACIONES EN LA WEB",
         "estado": "Aprobada",
+        "nota": 48,
         "requisitos": ["IGS27", "IGS31"]
       }
     ]
@@ -262,13 +293,13 @@
       {
         "codigo": "IGS38",
         "nombre": "ELECTIVA I",
-        "estado": "Matricular",
+        "estado": "Matriculada",
         "requisitos": []
       },
       {
         "codigo": "IGS39",
         "nombre": "PROYECTO INTEGRADOR PROFESIONAL",
-        "estado": "Matricular",
+        "estado": "Matriculada",
         "requisitos": ["IGS20"]
       },
       {
@@ -309,7 +340,7 @@
       {
         "codigo": "IGS45",
         "nombre": "PROTOCOLOS DE REDES",
-        "estado": "Matricular",
+        "estado": "Matriculada",
         "requisitos": ["IGS37"]
       },
       {
@@ -322,6 +353,7 @@
         "codigo": "IGS47",
         "nombre": "PROGRAMACIÓN DE DISPOSITIVOS MÓVILES",
         "estado": "Aprobada",
+        "nota": 49,
         "requisitos": ["IGS37"]
       }
     ]
@@ -351,6 +383,7 @@
         "codigo": "IGS51",
         "nombre": "GESTIÓN DE PROYECTOS DE INGENIERÍA",
         "estado": "Pendiente",
+        "nota": 0,
         "requisitos": ["IGS39"]
       }
     ]

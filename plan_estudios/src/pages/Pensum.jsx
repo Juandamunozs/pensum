@@ -2,7 +2,7 @@ import pensum_ingenieria from '../db/Pensum_p231_ingenieria.json';
 import pensum_tecnologia from '../db/Pensum_t215_tecnologia.json';
 import fmi from '../db/fmi.json';
 import './Pensum.css';
-import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart, MdTimelapse } from 'react-icons/md';
+import { MdCheckCircle, MdMenuBook, MdAccessTime, MdCancel, MdBarChart, MdTimelapse, MdGrade } from 'react-icons/md';
 
 // npm install react-icons
 
@@ -50,14 +50,32 @@ function tiempoRestante(ms, fechaObjetivo) {
 
 export default function Pensum() {
 
+
   const materiasPlanIngenieria = pensum_ingenieria.flatMap(sem => sem.materias);
   const totalMateriasIngenieria = materiasPlanIngenieria.length;
-
   const totalAprobadasIngenieria = materiasPlanIngenieria.filter(m => m.estado.toLowerCase() === 'aprobada').length;
   const totalMatriculadasIngenieria = materiasPlanIngenieria.filter(m => m.estado.toLowerCase() === 'matriculada').length;
   const totalPendientesIngenieria = materiasPlanIngenieria.filter(m => m.estado.toLowerCase() === 'pendiente').length;
   const totalDesaprobadasIngenieria = materiasPlanIngenieria.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
   const porcentajeIngenieria = (cantidad) => ((cantidad / totalMateriasIngenieria) * 100).toFixed(1);
+
+  const materiasConNota_ing = materiasPlanIngenieria.filter(
+    m =>
+      m.nota != null &&
+      (
+        m.estado.toLowerCase() === "aprobada" ||
+        m.estado.toLowerCase() === "desaprobada"
+      )
+  );
+
+  console.log(materiasConNota_ing)
+
+  const promedio_ing = Number(
+    (
+      materiasConNota_ing.reduce((suma, m) => suma + m.nota, 0) /
+      materiasConNota_ing.length
+    ).toFixed(1)
+  );
 
   const materiasPlanTecnologia = pensum_tecnologia.flatMap(sem => sem.materias);
   const totalMateriasTecnologia = materiasPlanTecnologia.length;
@@ -67,6 +85,24 @@ export default function Pensum() {
   const totalDesaprobadasTecnologia = materiasPlanTecnologia.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
   const porcentajeTecnologia = (cantidad) => ((cantidad / totalMateriasTecnologia) * 100).toFixed(1);
 
+  const materiasConNota_tec = materiasPlanTecnologia.filter(
+    m =>
+      m.nota != null &&
+      (
+        m.estado.toLowerCase() === "aprobada" ||
+        m.estado.toLowerCase() === "desaprobada"
+      )
+  );
+
+  console.log(materiasConNota_tec)
+
+  const promedio_tec = Number(
+    (
+      materiasConNota_tec.reduce((suma, m) => suma + m.nota, 0) /
+      materiasConNota_tec.length
+    ).toFixed(1)
+  );
+
   const materiasfmi = fmi.flatMap(sem => sem.materias);
   const totalMateriasfmi = materiasfmi.length;
   const totalAprobadasfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'aprobada').length;
@@ -74,6 +110,25 @@ export default function Pensum() {
   const totalPendientesfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'pendiente').length;
   const totalDesaprobadasfmi = materiasfmi.filter(m => m.estado.toLowerCase() === 'desaprobada').length;
   const porcentajefmi = (cantidad) => ((cantidad / totalMateriasfmi) * 100).toFixed(1);
+
+  const materiasConNota_fmi = materiasfmi.filter(
+    m =>
+      m.nota != null &&
+      (
+        m.estado.toLowerCase() === "aprobada" ||
+        m.estado.toLowerCase() === "desaprobada"
+      )
+  );
+
+  console.log(materiasConNota_fmi)
+
+  const promedio_fmi = Number(
+    (
+      materiasConNota_fmi.reduce((suma, m) => suma + m.nota, 0) /
+      materiasConNota_fmi.length
+    ).toFixed(1)
+  );
+
 
   const now = new Date();
   const pensumTecnologia = new Date("2024-11-30");
@@ -182,6 +237,13 @@ export default function Pensum() {
           </span>
         </div>
 
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdGrade className="text-gray-600 text-2xl" />
+          <span>
+            Promedio acumulado: {promedio_ing}
+          </span>
+        </div>
+
         <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
           <MdTimelapse className="text-blue-600 text-2xl leading-none" />
           <span className="leading-tight">
@@ -197,7 +259,7 @@ export default function Pensum() {
         </div> */}
       </section>
 
-      <div class="linea-horizontal"></div>
+      <div className="linea-horizontal"></div>
 
       <h3 className="text-2xl font-bold mb-4">Plan de Estudios Tecnología en Sistemas de Información</h3>
       <p className="mb-6"></p>
@@ -267,6 +329,13 @@ export default function Pensum() {
           </span>
         </div>
 
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdGrade className="text-gray-600 text-2xl" />
+          <span>
+            Promedio acumulado: {promedio_tec}
+          </span>
+        </div>
+
         <div className="flex items-center gap-3 bg-blue-100 text-blue-800 px-4 py-3 rounded-lg shadow-sm">
           <MdTimelapse className="text-blue-600 text-2xl leading-none" />
           <span className="leading-tight">
@@ -275,7 +344,7 @@ export default function Pensum() {
         </div>
       </section>
 
-      <div class="linea-horizontal"></div>
+      <div className="linea-horizontal"></div>
 
       <h3 className="text-2xl font-bold mb-4">Formación Integral Mixta USC</h3>
       <p className="mb-6"></p>
@@ -342,6 +411,12 @@ export default function Pensum() {
           <MdBarChart className="text-gray-600 text-2xl leading-none" />
           <span className="leading-tight">
             Total de materias: {totalMateriasfmi}
+          </span>
+        </div>
+        <div className="flex items-center gap-3 bg-gray-100 text-gray-800 px-4 py-3 rounded-lg shadow-sm col-span-full justify-center">
+          <MdGrade className="text-gray-600 text-2xl" />
+          <span>
+            Promedio acumulado: {promedio_fmi}
           </span>
         </div>
 
