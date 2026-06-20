@@ -64,7 +64,8 @@ export default function Pensum() {
       m.nota != null &&
       (
         m.estado.toLowerCase() === "aprobada" ||
-        m.estado.toLowerCase() === "desaprobada"
+        m.estado.toLowerCase() === "desaprobada" ||
+        m.estado.toLowerCase() === "matriculada"
       )
   );
 
@@ -90,7 +91,8 @@ export default function Pensum() {
       m.nota != null &&
       (
         m.estado.toLowerCase() === "aprobada" ||
-        m.estado.toLowerCase() === "desaprobada"
+        m.estado.toLowerCase() === "desaprobada" ||
+        m.estado.toLowerCase() === "matriculada"
       )
   );
 
@@ -116,7 +118,8 @@ export default function Pensum() {
       m.nota != null &&
       (
         m.estado.toLowerCase() === "aprobada" ||
-        m.estado.toLowerCase() === "desaprobada"
+        m.estado.toLowerCase() === "desaprobada" ||
+        m.estado.toLowerCase() === "matriculada"
       )
   );
 

@@ -168,6 +168,7 @@
         "codigo": "IGS22",
         "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS",
         "estado": "Matriculada",
+        "nota": 46,
         "requisitos": ["IGS16", "IGS17"]
       }
     ]
@@ -186,6 +187,7 @@
         "codigo": "IGS24",
         "nombre": "TEORÍA DE GRAFOS",
         "estado": "Matriculada",
+        "nota": 46,
         "requisitos": ["IGS16", "IGS17"]
       },
       {
@@ -294,12 +296,14 @@
         "codigo": "IGS38",
         "nombre": "ELECTIVA I",
         "estado": "Matriculada",
+       "nota": 46,
         "requisitos": []
       },
       {
         "codigo": "IGS39",
         "nombre": "PROYECTO INTEGRADOR PROFESIONAL",
         "estado": "Matriculada",
+        "nota": 46,
         "requisitos": ["IGS20"]
       },
       {
@@ -341,6 +345,7 @@
         "codigo": "IGS45",
         "nombre": "PROTOCOLOS DE REDES",
         "estado": "Matriculada",
+        "nota": 46,
         "requisitos": ["IGS37"]
       },
       {
