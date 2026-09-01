@@ -12,8 +12,8 @@
       {
         "codigo": "CSI01",
         "nombre": "CÁTEDRA SANTIAGUINA",
-        "estado": "Matriculada",
-        "nota": null,
+        "estado": "Aprobada",
+        "nota": 49,
         "requisitos": []
       },
       {
