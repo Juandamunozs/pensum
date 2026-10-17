@@ -186,7 +186,7 @@
       {
         "codigo": "IGS24",
         "nombre": "TEORÍA DE GRAFOS",
-        "estado": "Matriculada",
+        "estado": "Aprobada",
         "nota": 50,
         "requisitos": ["IGS16", "IGS17"]
       },
