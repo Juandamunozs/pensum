@@ -168,7 +168,6 @@
         "codigo": "IGS22",
         "nombre": "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS",
         "estado": "Matriculada",
-        "nota": 46,
         "requisitos": ["IGS16", "IGS17"]
       }
     ]
@@ -296,14 +295,13 @@
         "codigo": "IGS38",
         "nombre": "ELECTIVA I",
         "estado": "Matriculada",
-        "nota": 46,
         "requisitos": []
       },
       {
         "codigo": "IGS39",
         "nombre": "PROYECTO INTEGRADOR PROFESIONAL",
-        "estado": "Matriculada",
-        "nota": 46,
+        "estado": "Aprobada",
+        "nota": 30,
         "requisitos": ["IGS20"]
       },
       {
@@ -375,9 +373,7 @@
       {
         "codigo": "IGS49",
         "nombre": "BUENAS PRÁCTICAS PROFESIONALES EN INGENIERÍA",
-        "nota": 30,
-        "estado": "Aprobada",
-        
+        "estado": "Pendiente",
         "requisitos": ["IGS39"]
       },
       {
@@ -390,7 +386,6 @@
         "codigo": "IGS51",
         "nombre": "GESTIÓN DE PROYECTOS DE INGENIERÍA",
         "estado": "Pendiente",
-        "nota": 0,
         "requisitos": ["IGS39"]
       }
     ]
