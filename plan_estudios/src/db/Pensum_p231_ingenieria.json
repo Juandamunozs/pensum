@@ -296,7 +296,7 @@
         "codigo": "IGS38",
         "nombre": "ELECTIVA I",
         "estado": "Matriculada",
-       "nota": 46,
+        "nota": 46,
         "requisitos": []
       },
       {
@@ -344,8 +344,8 @@
       {
         "codigo": "IGS45",
         "nombre": "PROTOCOLOS DE REDES",
-        "estado": "Matriculada",
-        "nota": 46,
+        "estado": "Aprobada",
+        "nota": 47,
         "requisitos": ["IGS37"]
       },
       {
@@ -375,7 +375,9 @@
       {
         "codigo": "IGS49",
         "nombre": "BUENAS PRÁCTICAS PROFESIONALES EN INGENIERÍA",
-        "estado": "Pendiente",
+        "nota": 30,
+        "estado": "Aprobada",
+        
         "requisitos": ["IGS39"]
       },
       {
